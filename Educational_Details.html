@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Educational Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    *{
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        
+    }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline:none;
+  font-size: 15px;
+  transition: 0.4s;
+  height:10%;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  margin:0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.panel-title{
+  font-size:18px;
+  padding:2px 4px;
+
+}
+</style>
+</head>
+<body style="width:70%;margin-left:15%;">
+
+<h2 style="text-align: center">Educational Details</h2>
+
+<button class="accordion"><h4 class="panel-title">High School
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-plus" style="float:right"></span></a>
+      </h4></button>
+    
+<div class="panel">
+    <!-- form start here-->
+    <div class="content" style="width: 80%;margin-left: auto;margin-right: auto">
+        <section class="Details" style="border: 1px solid #495057;padding-right: 30px;padding-left: 50px;padding-top: 70px;padding-bottom: 30px">
+      <form style="width: 80%">
+        <div class="form-group row">
+           <label for="pass_year" class="col-sm-2 col-form-label" style="margin-top: 10px">Passing Years</label>
+          <div class="col-sm-10">
+             <select id="pass_year" class="form-control" style="margin-top: 10px;">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="university" class="col-sm-2 col-form-label">University Board</label>
+          <div class="col-sm-10">
+             <select id="university" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="roll_num" class="col-sm-2 col-form-label" style="margin-top: 10px;">Roll Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="roll_num" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+         <div class="form-group row">
+          <label for="marksheet" class="col-sm-2 col-form-label">Marksheet Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marksheet" style="margin-top: 10px;">
+          </div>
+        </div>
+        
+         <div class="form-group row" style="margin-left: 200px;">
+          <div class="form-group col-sm-6"> 
+          <label for="max_marks" class="col-sm-6 col-form-label">Maximum Marks</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="max_marks">
+          </div>
+          </div>
+      
+             <div class="form group col-sm-6"> 
+          <label for="marks_obt" class="col-sm-6 col-form-label">Marks Obtained</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marks_obt" >
+          </div>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="percent" class="col-sm-2 col-form-label" style="margin-top: 10px;">Percentage</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="percent" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+          <div class="col-sm-10">
+             <select id="subject" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+                   
+            </select>
+          </div>
+        </div>
+      
+       </section>
+      
+       <br>
+        
+        
+      
+      </form>
+</div>
+</div>
+
+<button class="accordion"><h4 class="panel-title">Intermediate
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-plus" style="float:right"></span></a>
+      </h4></button>
+    
+<div class="panel">
+    <!-- form start here-->
+    <div class="content" style="width: 80%;margin-left: auto;margin-right: auto">
+        <section class="Details" style="border: 1px solid #495057;padding-right: 30px;padding-left: 50px;padding-top: 70px;padding-bottom: 30px">
+      <form style="width: 80%">
+        <div class="form-group row">
+           <label for="pass_year" class="col-sm-2 col-form-label" style="margin-top: 10px">Passing Years</label>
+          <div class="col-sm-10">
+             <select id="pass_year" class="form-control" style="margin-top: 10px;">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="university" class="col-sm-2 col-form-label">University Board</label>
+          <div class="col-sm-10">
+             <select id="university" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="roll_num" class="col-sm-2 col-form-label" style="margin-top: 10px;">Roll Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="roll_num" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+         <div class="form-group row">
+          <label for="marksheet" class="col-sm-2 col-form-label">Marksheet Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marksheet" style="margin-top: 10px;">
+          </div>
+        </div>
+        
+         <div class="form-group row" style="margin-left: 200px;">
+          <div class="form-group col-sm-6"> 
+          <label for="max_marks" class="col-sm-6 col-form-label">Maximum Marks</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="max_marks">
+          </div>
+          </div>
+      
+             <div class="form group col-sm-6"> 
+          <label for="marks_obt" class="col-sm-6 col-form-label">Marks Obtained</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marks_obt" >
+          </div>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="percent" class="col-sm-2 col-form-label" style="margin-top: 10px;">Percentage</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="percent" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+          <div class="col-sm-10">
+             <select id="subject" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+                   
+            </select>
+          </div>
+        </div>
+      
+       </section>
+      
+       <br>
+        
+        
+      </form>
+</div>
+</div>
+
+
+<button class="accordion"><h4 class="panel-title">Under-Graduate
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="glyphicon glyphicon-plus" style="float:right"></a>
+      </h4></button>
+    
+<div class="panel">
+        <div class="content" style="width: 80%;margin-left: auto;margin-right: auto">
+                <section class="Details" style="border: 1px solid #495057;padding-right: 30px;padding-left: 50px;padding-top: 70px;padding-bottom: 30px">
+              <form style="width: 80%">
+                <div class="form-group row">
+                   <label for="pass_year" class="col-sm-2 col-form-label" style="margin-top: 10px">Passing Years</label>
+                  <div class="col-sm-10">
+                     <select id="pass_year" class="form-control" style="margin-top: 10px;">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                   <label for="university" class="col-sm-2 col-form-label">University Board</label>
+                  <div class="col-sm-10">
+                     <select id="university" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                  <label for="roll_num" class="col-sm-2 col-form-label" style="margin-top: 10px;">Roll Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="roll_num" style="margin-top: 10px;">
+                  </div>
+                </div>
+              
+                 <div class="form-group row">
+                  <label for="marksheet" class="col-sm-2 col-form-label">Marksheet Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="marksheet" style="margin-top: 10px;">
+                  </div>
+                </div>
+                
+                 <div class="form-group row" style="margin-left: 200px;">
+                  <div class="form-group col-sm-6"> 
+                  <label for="max_marks" class="col-sm-6 col-form-label">Maximum Marks</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="max_marks">
+                  </div>
+                  </div>
+              
+                     <div class="form group col-sm-6"> 
+                  <label for="marks_obt" class="col-sm-6 col-form-label">Marks Obtained</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="marks_obt" >
+                  </div>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                  <label for="percent" class="col-sm-2 col-form-label" style="margin-top: 10px;">Percentage</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="percent" style="margin-top: 10px;">
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                   <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                  <div class="col-sm-10">
+                     <select id="subject" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                           
+                    </select>
+                  </div>
+                </div>
+              
+               </section>
+              
+               <br>
+                
+                
+              </form>
+
+</div>
+</div>
+
+  
+
+<button class="accordion"><h4 class="panel-title">Post-Graduate
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class="glyphicon glyphicon-plus" style="float:right"></a>
+      </h4></button>
+    
+<div class="panel">
+        <div class="content" style="width: 80%;margin-left: auto;margin-right: auto">
+                <section class="Details" style="border: 1px solid #495057;padding-right: 30px;padding-left: 50px;padding-top: 70px;padding-bottom: 30px">
+              <form style="width: 80%">
+                <div class="form-group row">
+                   <label for="pass_year" class="col-sm-2 col-form-label" style="margin-top: 10px">Passing Years</label>
+                  <div class="col-sm-10">
+                     <select id="pass_year" class="form-control" style="margin-top: 10px;">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                   <label for="university" class="col-sm-2 col-form-label">University Board</label>
+                  <div class="col-sm-10">
+                     <select id="university" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                  <label for="roll_num" class="col-sm-2 col-form-label" style="margin-top: 10px;">Roll Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="roll_num" style="margin-top: 10px;">
+                  </div>
+                </div>
+              
+                 <div class="form-group row">
+                  <label for="marksheet" class="col-sm-2 col-form-label">Marksheet Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="marksheet" style="margin-top: 10px;">
+                  </div>
+                </div>
+                
+                 <div class="form-group row" style="margin-left: 200px;">
+                  <div class="form-group col-sm-6"> 
+                  <label for="max_marks" class="col-sm-6 col-form-label">Maximum Marks</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="max_marks">
+                  </div>
+                  </div>
+              
+                     <div class="form group col-sm-6"> 
+                  <label for="marks_obt" class="col-sm-6 col-form-label">Marks Obtained</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="marks_obt" >
+                  </div>
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                  <label for="percent" class="col-sm-2 col-form-label" style="margin-top: 10px;">Percentage</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="percent" style="margin-top: 10px;">
+                  </div>
+                </div>
+              
+                <div class="form-group row">
+                   <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                  <div class="col-sm-10">
+                     <select id="subject" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                           
+                    </select>
+                  </div>
+                </div>
+              
+               </section>
+              
+               <br>
+                
+                
+              
+              </form>
+</div>
+</div>
+
+<button class="accordion" ><h4 class="panel-title">Professional Details
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-plus" style="float:right"></span></a>
+      </h4></button>
+    
+<div class="panel">
+    <!-- form start here-->
+    <div class="content" style="width: 80%;margin-left: auto;margin-right: auto">
+        <section class="Details" style="border: 1px solid #495057;padding-right: 30px;padding-left: 50px;padding-top: 70px;padding-bottom: 30px">
+      <form style="width: 80%">
+        <div class="form-group row">
+           <label for="pass_year" class="col-sm-2 col-form-label" style="margin-top: 10px">Passing Years</label>
+          <div class="col-sm-10">
+             <select id="pass_year" class="form-control" style="margin-top: 10px;">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="university" class="col-sm-2 col-form-label">University Board</label>
+          <div class="col-sm-10">
+             <select id="university" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="roll_num" class="col-sm-2 col-form-label" style="margin-top: 10px;">Roll Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="roll_num" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+         <div class="form-group row">
+          <label for="marksheet" class="col-sm-2 col-form-label">Marksheet Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marksheet" style="margin-top: 10px;">
+          </div>
+        </div>
+        
+         <div class="form-group row" style="margin-left: 200px;">
+          <div class="form-group col-sm-6"> 
+          <label for="max_marks" class="col-sm-6 col-form-label">Maximum Marks</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="max_marks">
+          </div>
+          </div>
+      
+             <div class="form group col-sm-6"> 
+          <label for="marks_obt" class="col-sm-6 col-form-label">Marks Obtained</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="marks_obt" >
+          </div>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="percent" class="col-sm-2 col-form-label" style="margin-top: 10px;">Percentage</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="percent" style="margin-top: 10px;">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+           <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+          <div class="col-sm-10">
+             <select id="subject" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+                   
+            </select>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                     Agree Terms and Conditions
+            </label>
+          </div>
+        </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</body>
+</html>
